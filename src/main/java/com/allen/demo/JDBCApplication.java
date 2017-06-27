@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Allen on 2017/6/27.
  */
+/*
 @SpringBootApplication
 public class JDBCApplication implements CommandLineRunner {
 
@@ -54,3 +55,4 @@ public class JDBCApplication implements CommandLineRunner {
         ).forEach(customer -> log.info(customer.toString()));
     }
 }
+*/
