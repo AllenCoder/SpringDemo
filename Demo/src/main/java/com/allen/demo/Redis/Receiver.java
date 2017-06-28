@@ -14,11 +14,13 @@ public class Receiver {
     private static final Logger LOGGER = LoggerFactory.getLogger(Receiver.class);
 
     private CountDownLatch latch;
-
+//自动装配字段
     @Autowired
     public Receiver(CountDownLatch latch) {
         this.latch = latch;
     }
+
+    /*反射调用的代码*/
     public void receiveMessage(String message){
         LOGGER.info("Received <"+message+">");
         latch.countDown();
